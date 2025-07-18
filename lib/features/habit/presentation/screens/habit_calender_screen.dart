@@ -49,7 +49,7 @@ class _HabitCalendarScreenState extends State<HabitCalendarScreen> {
                 selectedDayPredicate: (day) => completedDays.contains(day),
                 onDaySelected: (selectedDay, focusedDay) {
                   setState(() => _focusedDay = focusedDay);
-                  context.read<CalendarBloc>().add(
+                  sl<CalendarBloc>().add(
                     CalendarEvent.toggle(widget.habit.id, selectedDay),
                   );
                 },
