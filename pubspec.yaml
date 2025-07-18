@@ -44,7 +44,7 @@ dependencies:
 
   isar:
   build_runner: 
-  isar_flutter_libs:
+  
   isar_generator:
   json_serializable: 
 
